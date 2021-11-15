@@ -1,0 +1,63 @@
+@import 'core';
+main{
+    width: 100%;
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 15% 90%;
+    #menu{
+        position: fixed;
+        top: 40px;
+        z-index: 1;
+        width: 15%;
+        height: 100%;
+        background-color: $main02;
+        padding-top: 5%;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        user-select: none;
+        box-shadow: 1px 0 1px #4a4e51;
+        .button-menu{
+            width: 90%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            //border-bottom: solid 1.5px black;
+            //border-radius: 10px 10px 0 0;
+            //box-shadow: 0 0 3px black;
+            background-color: $main02shadow;
+            span{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                font-weight: 500;
+                margin: 8px 0;
+                
+                color: $white;
+                text-shadow: 0 0 3px black;
+            }
+        }
+        .itens-menu{
+            //border-radius: 0px 0px 10px 10px;
+            //box-shadow: 0 3px 3px black;
+            padding-top: 6px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            //background-color: $button;
+            width: 90%;
+            span{
+                color: $text;
+                text-shadow: 0 0 1px black;
+                font-weight: 300;
+                margin-bottom: 5px;
+                cursor: pointer;
+                &:hover{
+                    color: $texthover;
+                }
+            }
+        }
+    }
+}
